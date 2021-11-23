@@ -129,7 +129,6 @@ section .title::after{
 }
 
 .navbar .menu li{
-    /* background: red; */
     list-style: none;
     display: inline-block;
 }
@@ -437,7 +436,13 @@ section .title::after{
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
+}
+
+.slideshow-container img{
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+}
   
 .mySlides {
     display: none;
@@ -523,63 +528,64 @@ section .title::after{
 /*******GALLERY PAGE********************/
 
 .container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 40px 20px 0 20px;
-}
-
-.container .heading{
-  width: 50%;
-  padding-bottom: 50px;
-}
-.container .heading h3{
-  font-size: 3em;
-  font-weight: bolder;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #222;
-}
-
-.container .heading h3 span{
-  font-weight: 100;
-}
-.container .box{
- display: flex;
- flex-direction: row;
- justify-content: space-between;
-}
-
-.container .box .dream{
-  display: flex;
-  flex-direction: column;
-  width: 32.5%;
-}
-
-.container .box .dream img{
-  width: 100%;
-  padding-bottom: 15px;
-  border-radius: 5px;
-}
-
-.image {
-    position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-}
-
-.image h2 {
-    color: #fff;
-    position: absolute;
-    bottom: 10%;
-    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+  }
+  
+  .container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  .container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+  }
+  
+  .container .heading h3 span{
+    font-weight: 100;
+  }
+  .container .box{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  
+  .container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+  }
+  
+  .container .box .dream img{
     width: 100%;
-    padding: 20px auto; 
-    background-color: rgba(0,0,0,0.6);
-}
-
+    padding-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  .image {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* width: 200px; */
+      /* height: 1000px; */
+  }
+  
+  .image h2 {
+      color: #fff;
+      position: absolute;
+      bottom: 10%;
+      font-size: 30px;
+      width: 100%;
+      padding: 20px auto; 
+      background-color: rgba(0,0,0,0.6);
+  }
 
 /**********************************************************************************************/
 
@@ -634,7 +640,6 @@ section .title::after{
 .teams .carousel .card:hover img{
     border-color: #fff;
 }
-
 .soc {
     display: flex;
 }
@@ -668,14 +673,14 @@ section .title::after{
     font-size: 35px;
 }
 footer{
-    background: #111;
+    background: #f99f37;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
     bottom: 0;
 }
 footer span a{
-    color: #f99f37;
+    color: #111;
     text-decoration: none;
 }
 footer span a:hover{
@@ -739,13 +744,56 @@ footer span a:hover{
     margin: 0px 5px;
 }
 
+.trip-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+/* .trip-text h1{
+    font-size: 200px;
+} */
+/* .trip-card{
+    background: green;
+} */
+.contact-width{
+    max-width: 1300px;
+    padding: 0 20px;
+    padding-right: 55px;
+    margin: auto;
+}
 
+.contact-width-new{
+    padding: 0px;
+}
 @media (max-width: 1300px) {
     .home .max-width{
         margin-left: 0px;
     }
-    .trip .trip-content .right{
-        width: 53%;
+}
+
+@media (max-width: 1280px) {
+    .contact-width{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 60px;
+    }
+    .trip .trip-content .right p{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact-width{
+        padding-left: 48px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .contact-width{
+        padding-left: 25px;
     }
 }
 
@@ -769,14 +817,11 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 20px;
     }
-    .cards {
-        padding: 0px 100px;
+    .contact-width{
+        padding-left: 50px;
     }
-    .trip .trip-content .right{
-        width: 52%;
-    }
-    
 }
+
 @media (max-width: 947px){
     .logo img {
         width: 85px;
@@ -842,8 +887,17 @@ footer span a:hover{
     .slider-text{
         font-size: 40px;
     }
-    .cards {
-        padding: 0px 50px;
+}
+
+@media (max-width: 890px){
+    .contact-width{
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 850px){
+    .contact-width{
+        padding-left: 20px;
     }
 }
 
@@ -867,12 +921,6 @@ footer span a:hover{
     .slider-text{
         font-size: 35px;
     }
-    .ui-card {
-        margin: 10px;
-    }
-    .cards {
-        padding: 0px 20px;
-    }
 }
 
 @media only screen and (max-width: 769px){
@@ -882,6 +930,18 @@ footer span a:hover{
 
     .container .box .dream{
     width: 100%;
+    }
+}
+
+@media (max-width: 832px){
+    .contact-width{
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 750px){
+    .contact-width{
+        padding-left: 30px;
     }
 }
 
@@ -910,6 +970,12 @@ footer span a:hover{
     }
     .carousel {
         flex-direction: column;
+    }
+    .trip-card{
+        flex-direction: column;
+    }
+    .contact-width{
+        padding-left: 20px;
     }
 }
 
@@ -948,9 +1014,12 @@ footer span a:hover{
     .slider-text{
         font-size: 20px;
     }
+    .slideshow-container img{
+        height: 400px;
+    }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 500px) {
     .logo img {
         width: 70px;
         height: 70px;
@@ -985,14 +1054,9 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
-    .cards {
-        padding: 0px 20px;
-    }
     .trip-text h1{
-        font-size: 22px;
+        font-size: 20px;
     }
-    
-
 }
 
 @media (max-width: 410px) {
@@ -1007,16 +1071,13 @@ footer span a:hover{
         font-size: 20px;
     }
     .home .home-content .text-2{
-        font-size: 37px;
+        font-size: 35px;
     }
     .home .home-content .text-3{
         font-size: 10px;
     }
-    .cards {
-        padding: 0px 20px;
-    }
-    .trip-text h1{
-        font-size: 20px;
+    .slideshow-container img{
+        height: 300px;
     }
 }
 
@@ -1059,12 +1120,26 @@ footer span a:hover{
         font-size: 20px;
         line-height: 38px;
     }
-    .ui-card {
-        margin: 10px;
+    .slideshow-container img{
+        height: 250px;
     }
     .trip-text h1{
         font-size: 18px;
     }
+}
+
+@media (max-width: 320px) {
+    
+    .home .home-content .text-1{
+        font-size: 20px;
+    }
+    .home .home-content .text-2{
+        font-size: 30px;
+    }
+    .home .home-content .text-3{
+        font-size: 9px;
+    }
+    
 }
 
 @media (max-width: 370px) {
@@ -1168,5 +1243,4 @@ footer span a:hover{
     .trip-text h1{
         font-size: 11px;
     }
-    
 }
