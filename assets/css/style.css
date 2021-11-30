@@ -298,7 +298,7 @@ section .title::after{
     color: #fff;
     font-size: 16px;
     padding: 2px 12px;
-    margin-top: 50px;
+    margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
     border: 2px solid #f99f37;
@@ -644,6 +644,19 @@ section .title::after{
     display: flex;
 }
 
+.teams .carousel .UT-card img{
+    height: 400px;
+    width: 400px;    
+    border: none;
+    border-radius: 3%;
+}
+
+.teams .carousel .UT-card:hover{
+    background: none;
+}
+.teams .carousel .UT-card:hover .social{
+    color: #fff;
+}
 /*****************************************************************************************************************************/
 
 .submit-btn{
@@ -751,12 +764,6 @@ footer span a:hover{
     justify-content: center;
     margin: 0px;
 }
-/* .trip-text h1{
-    font-size: 200px;
-} */
-/* .trip-card{
-    background: green;
-} */
 .contact-width{
     max-width: 1300px;
     padding: 0 20px;
@@ -764,16 +771,16 @@ footer span a:hover{
     margin: auto;
 }
 
-.contact-width-new{
+/* .contact-width-new{
     padding: 0px;
-}
+} */
 @media (max-width: 1300px) {
     .home .max-width{
         margin-left: 0px;
     }
 }
 
-@media (max-width: 1280px) {
+/* @media (max-width: 1280px) {
     .contact-width{
         display: flex;
         align-items: center;
@@ -795,7 +802,7 @@ footer span a:hover{
     .contact-width{
         padding-left: 25px;
     }
-}
+} */
 
 @media (max-width: 1025px) {
     .logo img {
@@ -817,9 +824,9 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 20px;
     }
-    .contact-width{
+    /* .contact-width{
         padding-left: 50px;
-    }
+    } */
 }
 
 @media (max-width: 947px){
@@ -889,7 +896,7 @@ footer span a:hover{
     }
 }
 
-@media (max-width: 890px){
+/* @media (max-width: 890px){
     .contact-width{
         padding-left: 40px;
     }
@@ -899,7 +906,7 @@ footer span a:hover{
     .contact-width{
         padding-left: 20px;
     }
-}
+} */
 
 @media (max-width: 820px) {
     .logo img {
@@ -933,7 +940,7 @@ footer span a:hover{
     }
 }
 
-@media (max-width: 832px){
+/* @media (max-width: 832px){
     .contact-width{
         padding-left: 30px;
     }
@@ -943,7 +950,7 @@ footer span a:hover{
     .contact-width{
         padding-left: 30px;
     }
-}
+} */
 
 @media (max-width: 690px) {
     .logo img {
@@ -974,9 +981,9 @@ footer span a:hover{
     .trip-card{
         flex-direction: column;
     }
-    .contact-width{
+    /* .contact-width{
         padding-left: 20px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 643px){
